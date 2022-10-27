@@ -9,5 +9,5 @@ for a in bpy.context.selected_objects:
 	material_num = len(activeObjData.materials)
 
 	for i in range(stroke_num):
-		matIndex = np.random.randint(0, material_num - 1)
+		matIndex = np.random.randint(0, material_num)
 		activeObjData.layers[0].frames[0].strokes[i].material_index = matIndex
